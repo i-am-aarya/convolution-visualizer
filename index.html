@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convolution Visualizer</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
 
+<body>
+
+    <center>
+        <h1>
+            Convolution Visualizer
+        </h1>
+        <!-- <hr> -->
+    </center>
+
+    <div id="convolution-visualization-div">
+
+        <div id="image-input-wrapper">
+
+            <div id="image-input-grid">
+            </div>
+
+            <h1>Draw Image Here</h1>
+
+        </div>
+
+        <div id="convolution-parameters">
+
+            <div id="convolution-parameters-grid">
+                <h2>Kernel</h2>
+                <div id="kernel-input-grid"></div>
+
+                <h2>Stride</h2>
+                <div id="stride-input-wrapper">
+                    <!-- <input type="number" id="stride-input" class="material-input" value="1"> -->
+                    <!-- <div class="material-input">1</div> -->
+                    <h2>1</h2>
+                </div>
+            </div>
+
+
+
+            <button class="material-button" onclick="applyConvolution()">CONVOLVE</button>
+
+        </div>
+
+        <div id="convolution-output-wrapper">
+
+            <div id="convolution-output-grid"></div>
+
+            <h2>Convolution Output</h2>
+        </div>
+
+    </div>
 
     <script src="utils.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
